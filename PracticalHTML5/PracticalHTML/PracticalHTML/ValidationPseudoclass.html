@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Validation Pseudo Class</title>
+    <style>
+        h1{
+            margin:0px;
+            margin-bottom:6px;
+            font-size:1.6em;
+        }
+        fieldset{
+            width:500px;
+        }
+        input{
+            padding-left:4px;
+            border-radius:3px;
+        }
+        
+        input:valid + .invalid
+        {
+            visibility:hidden;
+        }
+        input:invalid + .invalid
+        {
+            visibility:visible;
+        }
+        input:required
+        {
+            border:2px solid #900;
+        }
+        input:valid{
+            border:2px solid #ccc;
+        }
+        .invalid
+        {
+            position:relative;
+            display:block;
+            font-size:0.7em;
+            color:#666;
+            margin-bottom:6px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h1>Change Email Address</h1>
+            <input type="text" name="userName" id="userName" placeholder="UserName" pattern="[a-zA-Z ]{5,}" maxlength="30" required />
+            <div class="invalid">The required user name may only be a series of alphabetical characters.</div>
+            <input type="email" name="email" id="email" placeholder="Email" required />
+            <div class="invalid">The required email address may not include any special characters other than '@' sign.</div>
+            <input type="submit" name="submit"  value="Change"/>
+        </fieldset>
+    </form>
+</body>
+</html>

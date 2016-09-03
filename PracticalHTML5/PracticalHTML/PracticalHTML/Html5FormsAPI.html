@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HTML5 forms new elements</title>
+    <style>
+        .search{
+            border:1px solid red;
+            background-color:lightyellow;
+        }
+        .col1{
+            border:1px solid black;
+            background-color:lightblue;
+            float:left;
+            width:50%;
+        }
+        .col2{
+            border:1px solid yellow;
+            background-color:grey;
+            margin-left:20%;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <div class="search">
+                <form novalidate>
+                    <label for="search">Search:</label>
+                    <input type="search" id="search" name="search" autofocus />
+                    <input type="submit" value="Go!" />
+                </form>
+            </div>
+            <br />
+            <form>
+                <div class="col1">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" class="name" placeholder="First and Last Name" required />
+                    <br />
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required />
+                    <br />
+                    <label for="phone">Telephone:</label>
+                    <input type="tel" name="phone" />
+                    <br />
+                    <label for="yearsInDev">Number of years in development:</label>
+                    <input type="number" name="yearsInDev" id="yearsInDev" min="0" max="30" step="1" required />
+                    <br />
+                    <label for="tshirt">T-Shirt Color</label>
+                    <input type="text" list="colors" />
+                    <datalist id="colors">
+                        <option>Green</option>
+                        <option>Blue</option>
+                        <option>Yellow</option>
+                    </datalist>
+                    <br />
+                    <label for="devExpRange">Development Experience Range:</label>
+                    <input type="range" id="devExpRange" name="devExpRange" min="0" max="100" step="1" value="50" />
+                    <span id="rangeValue"></span>
+                    <br />
+                </div>
+                <div class="col2">
+                    <label>Background Color:</label>
+                    <input type="color" id="bgColor" name="bgColor" value="rgb(128,0,0)" />
+                    <br />
+                    <label for="url">URL:</label>
+                    <input type="url" id="url" name="url" />
+                    <br />
+                    <label for="arrivalDate">Arrival Date</label>
+                    <input type="date" id="arrivalDate" name="arrivalDate" min="1800-01-01" max="2100-01-01" value="2015-23-05" />
+                    <br />
+                    <label for="datetime">Arrival Date/Time:</label>
+                    <input type="datetime" id="arrivalDateTime" name="arrivalDateTime" value="2015-23-05 11:47:00 UTC" />
+                    <br />
+                    <label for="datetimelocal">Arrival Date/Time Local:</label>
+                    <input type="datetime-local" name="arrivalDateTimeLocal" value="2015-23-05 12:38:00" />
+                    <br />
+                    <label for="arrivalTime">Arrival Time:</label>
+                    <input type="time" name="arrivalTime" value="09:12:15" />
+                    <br />
+                    <label for="birthMonth">Birth Month:</label>
+                    <input type="month" name="bitthMonth" value="1983-06 " />
+                    <br />
+                    <label for="vacationWeek">Vacation Week</label>
+                    <input type="week" name="vacationWeek" value="2015-W26" />
+                </div>
+            </form>
+        </article>
+    </main>
+    <script type="text/javascript">
+        var
+            range = document.querySelector('#devExpRange'),
+            rangeValue = document.querySelector('#rangeValue');
+
+        range.onchange = function () {
+            rangeValue.innerText = this.value;
+        };
+
+        rangeValue.innerHTML = range.value;
+    </script>
+</body>
+</html>
