@@ -22,6 +22,7 @@ namespace firstcore.Controllers
         {
             _memoryCache = memoryCache;
         }
+        // set a cache value
         public IActionResult CacheTryGetValueSet()
         {
             DateTime cacheEntry;
