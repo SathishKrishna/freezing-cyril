@@ -1,0 +1,10 @@
+/Users/sathishkrishnamoorthi/FunWithCode/firstcore/bin/Debug/netcoreapp2.0/firstcore.deps.json
+/Users/sathishkrishnamoorthi/FunWithCode/firstcore/bin/Debug/netcoreapp2.0/firstcore.runtimeconfig.json
+/Users/sathishkrishnamoorthi/FunWithCode/firstcore/bin/Debug/netcoreapp2.0/firstcore.runtimeconfig.dev.json
+/Users/sathishkrishnamoorthi/FunWithCode/firstcore/bin/Debug/netcoreapp2.0/firstcore.dll
+/Users/sathishkrishnamoorthi/FunWithCode/firstcore/bin/Debug/netcoreapp2.0/firstcore.pdb
+/Users/sathishkrishnamoorthi/FunWithCode/firstcore/obj/Debug/netcoreapp2.0/firstcore.csproj.CoreCompileInputs.cache
+/Users/sathishkrishnamoorthi/FunWithCode/firstcore/obj/Debug/netcoreapp2.0/firstcore.AssemblyInfoInputs.cache
+/Users/sathishkrishnamoorthi/FunWithCode/firstcore/obj/Debug/netcoreapp2.0/firstcore.AssemblyInfo.cs
+/Users/sathishkrishnamoorthi/FunWithCode/firstcore/obj/Debug/netcoreapp2.0/firstcore.dll
+/Users/sathishkrishnamoorthi/FunWithCode/firstcore/obj/Debug/netcoreapp2.0/firstcore.pdb
